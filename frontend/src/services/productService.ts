@@ -170,7 +170,7 @@ export const unitService = {
 export const productService = {
   getAll: async (filters: ProductsFilters = {}): Promise<ProductsResponse> => {
     const queryParams = new URLSearchParams();
-    
+    console.log(filters)
     if (filters.category && filters.category !== 'Tous') {
       queryParams.append('category', filters.category);
     }

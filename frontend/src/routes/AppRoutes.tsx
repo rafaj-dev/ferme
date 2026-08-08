@@ -10,6 +10,7 @@ import RecipePage from '../features/recipe/RecipePage';
 import SalesPage from '../features/sales/SalesPage';
 import FinancialDashboard from '../features/dashboard/FinancialDashboard';
 import ProtectedRoute from './ProtectedRoute'; 
+import NotFoundPage from '../pages/NotFoundPage';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const AppRoutes: React.FC = () => {
       <Route path="/utilisateur" element={<ProtectedRoute><UserPage /></ProtectedRoute>} />
       <Route path="/achats" element={<ProtectedRoute><AchatsPage /></ProtectedRoute>} />
       <Route path="/animal" element={<ProtectedRoute><AnimauxPage /></ProtectedRoute>} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 };

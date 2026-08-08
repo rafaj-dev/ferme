@@ -76,6 +76,7 @@ const ProduitsPage: React.FC = () => {
       }
       
       if (selectedCategory !== 'Tous') {
+        console.log("fsdkjmqfkjsmldfk")
         newFilters.category = selectedCategory;
       }
       
