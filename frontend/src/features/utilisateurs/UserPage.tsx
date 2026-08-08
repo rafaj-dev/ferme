@@ -4,10 +4,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { 
   Plus, 
-  Users, 
-  Search, 
-  Mail, 
-  Shield, 
+  Users,
+  Search,
+  Shield,
   UserCheck, 
   UserX,
   User,

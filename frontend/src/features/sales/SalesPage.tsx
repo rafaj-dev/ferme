@@ -10,7 +10,6 @@ import {
   Filter,
   ArrowUp,
   User,
-  DollarSign,
   ShoppingCart,
 } from 'lucide-react';
 import { toast } from 'react-toastify';

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { saleService, type Sale, type CreateSaleDto, type Product, type ProductionBatch, type Unit, type Batch } from '../services/saleService';
+import { saleService, type Sale, type CreateSaleDto, type Product, type Unit, type Batch } from '../services/saleService';
 import { notificationService } from '../services/notificationService';
 
 interface UseSalesReturn {
@@ -194,8 +194,7 @@ export const useSales = (): UseSalesReturn => {
         ;
       });
 
-      const result = await saleService.createSale(data);
-      ;
+      await saleService.createSale(data);
 
       // Recharger les ventes
       await loadSales();

@@ -151,8 +151,7 @@ const updateCulture = async (id: number, data: Partial<CreateCultureDto>): Promi
       setError('');
 
       ;
-      const deletedCulture = await cultureService.delete(id);
-      ;
+      await cultureService.delete(id);
 
       setCultures(prev => prev.filter(culture => culture.id !== id));
       notificationService.success('Culture supprimée avec succès');
@@ -175,8 +174,7 @@ const updateCulture = async (id: number, data: Partial<CreateCultureDto>): Promi
       setError('');
 
       ;
-      const result = await cultureService.createHarvest(data);
-      ;
+      await cultureService.createHarvest(data);
 
       // Recharger les cultures pour mettre à jour les récoltes
       await loadCultures();
@@ -236,8 +234,7 @@ const updateCulture = async (id: number, data: Partial<CreateCultureDto>): Promi
       setError('');
 
       ;
-      const result = await cultureService.seed(data);
-      ;
+      await cultureService.seed(data);
 
       // Recharger les cultures pour mettre à jour les événements
       await loadCultures();
