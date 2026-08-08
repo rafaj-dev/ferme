@@ -43,7 +43,7 @@ const LoginPage: React.FC = () => {
       <div className="hidden lg:flex flex-1 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] items-center justify-center p-12">
         <div className="text-center text-white max-w-md">
           <img 
-            src="/src/assets/login.png" 
+            src="/login.png"
             alt="Farm Management Logo" 
             className="w-[160px] h-[160px] mx-auto mb-8"
           />
@@ -59,7 +59,7 @@ const LoginPage: React.FC = () => {
         <div className="w-full max-w-md">
           <div className="text-center mb-6">
             <img 
-              src="/src/assets/logo.png" 
+              src="/logo.png"
               alt="Spacer Logo" 
               className="w-[70px] h-[70px] mx-auto mb-4"
             />

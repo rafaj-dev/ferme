@@ -358,7 +358,7 @@ const SalesPage: React.FC = () => {
               <div className="flex-shrink-0">
                 <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl shadow-lg flex items-center justify-center transform hover:scale-105 transition-transform backdrop-blur-sm bg-white/10 border border-white/20">
                   <img 
-                    src="/src/assets/logo.png" 
+                    src="/logo.png" 
                     alt="Logo" 
                     className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 object-contain"
                   />

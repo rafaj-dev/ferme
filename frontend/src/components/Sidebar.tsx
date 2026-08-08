@@ -246,7 +246,7 @@ const Sidebar: React.FC = () => {
           <div className="flex items-center justify-center lg:justify-start">
             <div className="flex items-center justify-center">
               <img
-                src="/src/assets/logo.png"
+                src="/logo.png"
                 alt="Farm Management Logo"
                 className="w-12 h-12"
               />
